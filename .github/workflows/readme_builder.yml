@@ -1,0 +1,46 @@
+name: README builder
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the master branch
+  push:
+    branches: [ master ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3
+
+      # Set up Python 3.10
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.10"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install requests
+      # Runs a single command using the runners shell
+      - name: Build README
+        run: cd ./docs/; python build.py
+
+      - name: Configuring git name & email
+        run: git config user.name "Zahin Zaman"; git config user.email "alvii147@gmail.com"
+
+      - name: Committing changes
+        run: |
+          git add .
+          git commit -m "[Github Action Bot] Generated README.md" || exit 0
+          git fetch origin master
+          git push
