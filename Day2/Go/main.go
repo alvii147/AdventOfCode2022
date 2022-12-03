@@ -100,12 +100,13 @@ func main() {
 	fmt.Println(totalScore)
 
 	totalScore = 0
-	// scan file line by line
+
 	scanner, err = GetFileScanner(filePath)
 	if err != nil {
 		fmt.Println("failed to get file scanner", err.Error())
 		return
 	}
+	// scan file line by line
 	for scanner.Scan() {
 		strategy := strings.Fields(scanner.Text())
 		// convert play strings to play values
