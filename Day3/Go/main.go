@@ -86,8 +86,8 @@ func main() {
 		halflen := utf8.RuneCountInString(rucksack) / 2
 		// split rucksack items halfway to get compartment contents
 		compartment1, compartment2 := rucksack[:halflen], rucksack[halflen:]
-		// get duplicate items between two compartments
 
+		// get duplicate items between two compartments
 		duplicateItems := GetDuplicateItems(compartment1, compartment2)
 		// return early if not exactly one duplicate is found
 		duplicatesCount := utf8.RuneCountInString(duplicateItems)
@@ -113,7 +113,7 @@ func main() {
 	n := 3
 	for true {
 		// slice of n rucksacks
-		rucksacks := make([]string, n)
+		nRucksacks := make([]string, n)
 		// condition for breaking out of outer loop
 		breakOuterLoop := false
 
@@ -125,23 +125,23 @@ func main() {
 				break
 			}
 
-			rucksacks[i] = scanner.Text()
+			nRucksacks[i] = scanner.Text()
 		}
 
 		if breakOuterLoop {
 			break
 		}
 
-		duplicateItems := rucksacks[0]
+		duplicateItems := nRucksacks[0]
 		// loop over rucksack items and gather duplicate items
 		for i := 1; i < n; i++ {
-			duplicateItems = GetDuplicateItems(duplicateItems, rucksacks[i])
+			duplicateItems = GetDuplicateItems(duplicateItems, nRucksacks[i])
 		}
 
 		// return early if not exactly one duplicate is found
 		duplicatesCount := utf8.RuneCountInString(duplicateItems)
 		if duplicatesCount != 1 {
-			fmt.Println(duplicatesCount, "duplicates found in rucksacks", rucksacks, "expected exactly 1")
+			fmt.Println(duplicatesCount, "duplicates found in rucksacks", nRucksacks, "expected exactly 1")
 			return
 		}
 
