@@ -14,4 +14,4 @@ Day | Problem | Languages
 --- | --- | ---
 1 | [See Puzzle](https://adventofcode.com/2022/day/1) | ![](https://img.shields.io/badge/go-00ADD8?style=for-the-badge&logo=go&logoColor=FFFFFF) ![](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=FFDD54)
 2 | [See Puzzle](https://adventofcode.com/2022/day/2) | ![](https://img.shields.io/badge/go-00ADD8?style=for-the-badge&logo=go&logoColor=FFFFFF) ![](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=FFDD54)
-3 | [See Puzzle](https://adventofcode.com/2022/day/3) | ![](https://img.shields.io/badge/go-00ADD8?style=for-the-badge&logo=go&logoColor=FFFFFF)
+3 | [See Puzzle](https://adventofcode.com/2022/day/3) | ![](https://img.shields.io/badge/go-00ADD8?style=for-the-badge&logo=go&logoColor=FFFFFF) ![](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=FFDD54)
