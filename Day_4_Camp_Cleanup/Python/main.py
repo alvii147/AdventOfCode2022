@@ -25,7 +25,7 @@ def range_a_contains_b(a, b):
 
 
 # check if range a overlaps with range b with a on the left and b on the right
-def range_a_overlaps_b(a, b):
+def range_a_left_overlaps_b(a, b):
     return a[0] <= b[1] and a[1] >= b[0]
 
 
@@ -50,7 +50,7 @@ if __name__ == '__main__':
     # count assignment pairs where one assignment overlaps with another
     overlaps_count = 0
     for assignments_pair in camp_assignments:
-        if range_a_overlaps_b(*assignments_pair) or range_a_overlaps_b(*reversed(assignments_pair)):
+        if range_a_left_overlaps_b(*assignments_pair) or range_a_left_overlaps_b(*reversed(assignments_pair)):
             overlaps_count += 1
 
     print(overlaps_count)
