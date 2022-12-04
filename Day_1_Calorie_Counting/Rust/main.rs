@@ -38,5 +38,5 @@ fn main() {
         }
     }
 
-    println!("{}", top_k_calories_sum);
+    println!("{top_k_calories_sum}");
 }
