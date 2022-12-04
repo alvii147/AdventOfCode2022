@@ -5,10 +5,12 @@ SHIELDS_IO_BADGE_URL = 'https://img.shields.io/badge'
 LANGUAGE_LOGOS = {
     'Go': 'go-00ADD8?style=for-the-badge&logo=go&logoColor=FFFFFF',
     'Python': 'python-3670A0?style=for-the-badge&logo=python&logoColor=FFDD54',
+    'Rust': 'rust-000000?style=for-the-badge&logo=rust&logoColor=FFFFFF',
 }
 LANGUAGE_FILENAMES = {
     'Go': 'main.go',
     'Python': 'main.py',
+    'Rust': 'main.rs',
 }
 
 
@@ -35,6 +37,6 @@ if __name__ == '__main__':
             day_num = int(dirname.lower().replace('day', ''))
             puzzle_link = f'[See Puzzle](https://adventofcode.com/2022/day/{day_num})'
             languages = [lang for lang in os.listdir(f'../{dirname}') if lang in LANGUAGE_LOGOS]
-            language_badges = ' '.join([f'[![]({SHIELDS_IO_BADGE_URL}/{LANGUAGE_LOGOS[lang]})]({dirname}/{lang}{LANGUAGE_FILENAMES[lang]})' for lang in languages])
+            language_badges = ' '.join([f'[![]({SHIELDS_IO_BADGE_URL}/{LANGUAGE_LOGOS[lang]})]({dirname}/{lang}/{LANGUAGE_FILENAMES[lang]})' for lang in languages])
 
             readme_file.write(f'{day_num} | {puzzle_link} | {language_badges}\n')
