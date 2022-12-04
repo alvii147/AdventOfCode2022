@@ -88,7 +88,7 @@ func main() {
 	}
 
 	totalScore := 0
-	// scan file line by line
+	// scan file line-by-line
 	for scanner.Scan() {
 		strategy := strings.Fields(scanner.Text())
 		// convert play strings to play values

@@ -75,7 +75,7 @@ func main() {
 	// calorie count for current elf
 	currentElfCalories := 0
 
-	// scan input line by line
+	// scan file line-by-line
 	scanner := bufio.NewScanner(f)
 	for scanner.Scan() {
 		line := scanner.Text()

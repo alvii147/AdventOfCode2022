@@ -80,7 +80,7 @@ func main() {
 	}
 
 	sumOfPriorities := 0
-	// scan file line by line
+	// scan file line-by-line
 	for scanner.Scan() {
 		rucksack := scanner.Text()
 		halflen := utf8.RuneCountInString(rucksack) / 2
