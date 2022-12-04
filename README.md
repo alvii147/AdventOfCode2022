@@ -12,6 +12,6 @@ Completed **3** out of **25** advent day puzzles.
 
 Day | Problem | Languages
 --- | --- | ---
-1 | [See Puzzle](https://adventofcode.com/2022/day/1) | [![](https://img.shields.io/badge/go-00ADD8?style=for-the-badge&logo=go&logoColor=FFFFFF)](Day1/Gomain.go) [![](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=FFDD54)](Day1/Pythonmain.py)
-2 | [See Puzzle](https://adventofcode.com/2022/day/2) | [![](https://img.shields.io/badge/go-00ADD8?style=for-the-badge&logo=go&logoColor=FFFFFF)](Day2/Gomain.go) [![](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=FFDD54)](Day2/Pythonmain.py)
-3 | [See Puzzle](https://adventofcode.com/2022/day/3) | [![](https://img.shields.io/badge/go-00ADD8?style=for-the-badge&logo=go&logoColor=FFFFFF)](Day3/Gomain.go) [![](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=FFDD54)](Day3/Pythonmain.py)
+1 | [See Puzzle](https://adventofcode.com/2022/day/1) | [![](https://img.shields.io/badge/rust-000000?style=for-the-badge&logo=rust&logoColor=FFFFFF)](Day1/Rust/main.rs) [![](https://img.shields.io/badge/go-00ADD8?style=for-the-badge&logo=go&logoColor=FFFFFF)](Day1/Go/main.go) [![](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=FFDD54)](Day1/Python/main.py)
+2 | [See Puzzle](https://adventofcode.com/2022/day/2) | [![](https://img.shields.io/badge/go-00ADD8?style=for-the-badge&logo=go&logoColor=FFFFFF)](Day2/Go/main.go) [![](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=FFDD54)](Day2/Python/main.py)
+3 | [See Puzzle](https://adventofcode.com/2022/day/3) | [![](https://img.shields.io/badge/go-00ADD8?style=for-the-badge&logo=go&logoColor=FFFFFF)](Day3/Go/main.go) [![](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=FFDD54)](Day3/Python/main.py)
