@@ -10,8 +10,8 @@ Completed **3** out of **25** advent day puzzles.
 
 ![Progress Bar](https://progress-bar.dev/12)
 
-Day | Problem | Languages
+Day | Puzzles | Solutions
 --- | --- | ---
-1 | [See Puzzle](https://adventofcode.com/2022/day/1) | [![](https://img.shields.io/badge/rust-000000?style=for-the-badge&logo=rust&logoColor=FFFFFF)](Day1/Rust/main.rs) [![](https://img.shields.io/badge/go-00ADD8?style=for-the-badge&logo=go&logoColor=FFFFFF)](Day1/Go/main.go) [![](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=FFDD54)](Day1/Python/main.py)
-2 | [See Puzzle](https://adventofcode.com/2022/day/2) | [![](https://img.shields.io/badge/go-00ADD8?style=for-the-badge&logo=go&logoColor=FFFFFF)](Day2/Go/main.go) [![](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=FFDD54)](Day2/Python/main.py)
-3 | [See Puzzle](https://adventofcode.com/2022/day/3) | [![](https://img.shields.io/badge/go-00ADD8?style=for-the-badge&logo=go&logoColor=FFFFFF)](Day3/Go/main.go) [![](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=FFDD54)](Day3/Python/main.py)
+1 | [Calorie Counting](https://adventofcode.com/2022/day/1) | [![](https://img.shields.io/badge/go-00ADD8?style=for-the-badge&logo=go&logoColor=FFFFFF)](Day_1_Calorie_Counting/Go/main.go) [![](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=FFDD54)](Day_1_Calorie_Counting/Python/main.py) [![](https://img.shields.io/badge/rust-000000?style=for-the-badge&logo=rust&logoColor=FFFFFF)](Day_1_Calorie_Counting/Rust/main.rs)
+2 | [Rock Paper Scissors](https://adventofcode.com/2022/day/2) | [![](https://img.shields.io/badge/go-00ADD8?style=for-the-badge&logo=go&logoColor=FFFFFF)](Day_2_Rock_Paper_Scissors/Go/main.go) [![](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=FFDD54)](Day_2_Rock_Paper_Scissors/Python/main.py)
+3 | [Rucksack Reorganization](https://adventofcode.com/2022/day/3) | [![](https://img.shields.io/badge/go-00ADD8?style=for-the-badge&logo=go&logoColor=FFFFFF)](Day_3_Rucksack_Reorganization/Go/main.go) [![](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=FFDD54)](Day_3_Rucksack_Reorganization/Python/main.py)
