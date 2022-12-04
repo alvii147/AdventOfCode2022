@@ -57,7 +57,7 @@ if __name__ == '__main__':
 
         readme_file.write(f'Completed **{len(puzzles_info)}** out of **25** advent day puzzles.\n\n')
         readme_file.write(f'![Progress Bar]({progress_bar})\n\n')
-        readme_file.write('Day | Puzzles | Solutions\n')
+        readme_file.write('Day | Puzzle | Solutions\n')
         readme_file.write('--- | --- | ---\n')
 
         for day_num, puzzle_info in puzzles_info.items():
