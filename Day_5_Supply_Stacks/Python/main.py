@@ -68,7 +68,7 @@ if __name__ == '__main__':
         # parse current move
         n_crates, from_idx, to_idx = parse_move(move)
         # transfer appropriate crates
-        # set retain_order = True so multiple moved stacks are moved in reverse order
+        # set retain_order = False so multiple moved stacks are moved in reverse order
         transfer_crates(stacks[from_idx], stacks[to_idx], n_crates, retain_order=False)
 
     # join top elements of stacks
