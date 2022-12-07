@@ -6,9 +6,9 @@
 
 Advent of Code is an Advent calendar of small programming puzzles for a variety of skill sets and skill levels that can be solved in any programming language you like. This repository contains solutions to the 2022 Advent of Code calendar.
 
-Completed **6** out of **25** advent day puzzles.
+Completed **7** out of **25** advent day puzzles.
 
-![Progress Bar](https://progress-bar.dev/24)
+![Progress Bar](https://progress-bar.dev/28)
 
 Day | Puzzle | Solutions
 --- | --- | ---
@@ -18,3 +18,4 @@ Day | Puzzle | Solutions
 4 | [Camp Cleanup](https://adventofcode.com/2022/day/4) | [![](https://img.shields.io/badge/go-00ADD8?style=for-the-badge&logo=go&logoColor=FFFFFF)](Day_4_Camp_Cleanup/Go/main.go) [![](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=FFDD54)](Day_4_Camp_Cleanup/Python/main.py)
 5 | [Supply Stacks](https://adventofcode.com/2022/day/5) | [![](https://img.shields.io/badge/go-00ADD8?style=for-the-badge&logo=go&logoColor=FFFFFF)](Day_5_Supply_Stacks/Go/main.go) [![](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=FFDD54)](Day_5_Supply_Stacks/Python/main.py)
 6 | [Tuning Trouble](https://adventofcode.com/2022/day/6) | [![](https://img.shields.io/badge/go-00ADD8?style=for-the-badge&logo=go&logoColor=FFFFFF)](Day_6_Tuning_Trouble/Go/main.go) [![](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=FFDD54)](Day_6_Tuning_Trouble/Python/main.py)
+7 | [No Space Left On Device](https://adventofcode.com/2022/day/7) | [![](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=FFDD54)](Day_7_No_Space_Left_On_Device/Python/main.py)
