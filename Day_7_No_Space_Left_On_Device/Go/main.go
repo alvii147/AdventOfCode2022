@@ -67,7 +67,7 @@ func (directory *Directory) Touch(file *File) error {
 }
 
 // add subdirectory to directory
-func (directory *Directory) Mkdir(subdirectory *Directory) error {
+func (directory *Directory) Mv(subdirectory *Directory) error {
 	// check and return error if file already exists
 	_, ok := directory.subdirectories[subdirectory.name]
 	if ok {
@@ -193,7 +193,7 @@ func main() {
 				newDirectory.name = directoryName
 
 				// add new directory as subdirectory of current directory
-				err := pwd.Mkdir(newDirectory)
+				err := pwd.Mv(newDirectory)
 				if err != nil {
 					panic(fmt.Sprintf("failed to convert add directory %s, %s", directoryName, err.Error()))
 				}
