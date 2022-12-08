@@ -47,7 +47,7 @@ if __name__ == '__main__':
         readme_file.write('</p>\n\n')
         readme_file.write('# Advent of Code 2022\n\n')
         readme_file.write(
-            'Advent of Code is an Advent calendar of small programming puzzles '
+            '[Advent of Code](https://adventofcode.com) is an Advent calendar of small programming puzzles '
             'for a variety of skill sets and skill levels that can be solved in any programming language you like. '
             'This repository contains solutions to the 2022 Advent of Code calendar.\n\n'
         )
