@@ -6,9 +6,9 @@
 
 [Advent of Code](https://adventofcode.com) is an Advent calendar of small programming puzzles for a variety of skill sets and skill levels that can be solved in any programming language you like. This repository contains solutions to the 2022 Advent of Code calendar.
 
-Completed **8** out of **25** advent day puzzles.
+Completed **9** out of **25** advent day puzzles.
 
-![Progress Bar](https://progress-bar.dev/32)
+![Progress Bar](https://progress-bar.dev/36)
 
 Day | Puzzle | Solutions
 --- | --- | ---
@@ -20,3 +20,4 @@ Day | Puzzle | Solutions
 6 | [Tuning Trouble](https://adventofcode.com/2022/day/6) | [![](https://img.shields.io/badge/go-00ADD8?style=for-the-badge&logo=go&logoColor=FFFFFF)](Day_6_Tuning_Trouble/Go/main.go) [![](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=FFDD54)](Day_6_Tuning_Trouble/Python/main.py)
 7 | [No Space Left On Device](https://adventofcode.com/2022/day/7) | [![](https://img.shields.io/badge/go-00ADD8?style=for-the-badge&logo=go&logoColor=FFFFFF)](Day_7_No_Space_Left_On_Device/Go/main.go) [![](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=FFDD54)](Day_7_No_Space_Left_On_Device/Python/main.py)
 8 | [Treetop Tree House](https://adventofcode.com/2022/day/8) | [![](https://img.shields.io/badge/go-00ADD8?style=for-the-badge&logo=go&logoColor=FFFFFF)](Day_8_Treetop_Tree_House/Go/main.go) [![](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=FFDD54)](Day_8_Treetop_Tree_House/Python/main.py)
+9 | [Rope Bridge](https://adventofcode.com/2022/day/9) | [![](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=FFDD54)](Day_9_Rope_Bridge/Python/main.py)
