@@ -11,7 +11,7 @@ class Rope:
         # list of sets of visited coordinates for each knot
         self.visited = []
         for _ in range(self.length):
-            self.visited.append(set())
+            self.visited.append({(0, 0)})
 
     def sign(self, x: int) -> int:
         """
