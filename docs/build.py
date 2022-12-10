@@ -24,13 +24,12 @@ def generate_progress_bar(numerator, denominator):
 def get_puzzles_info(dirnames):
     puzzles_info = {}
 
-    for dirname in sorted(dirnames):
-        dirname_split = dirname.split('_')
-        if len(dirname_split) < 3 or dirname_split[0].lower() != 'day':
-            continue
+    sorted_puzzles = [i.split('_') + [i] for i in dirnames]
+    sorted_puzzles = [[int(i[1]), ' '.join(i[2:-1]), i[-1]] for i in sorted_puzzles if len(i) >= 3 and i[0].lower() == 'day']
+    sorted_puzzles = sorted(sorted_puzzles, key=lambda x: x[0])
 
-        day_num = dirname_split[1]
-        puzzle_name = ' '.join(dirname_split[2:])
+    for puzzle in sorted_puzzles:
+        day_num, puzzle_name, dirname = puzzle
 
         puzzles_info[day_num] = {
             'name': puzzle_name,
