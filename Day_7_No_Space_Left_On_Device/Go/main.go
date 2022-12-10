@@ -17,25 +17,25 @@ var rootDirectory *Directory
 // struct representing each file
 type File struct {
 	// file name
-	name string
+	Name string
 	// file size
-	size int
+	Size int
 }
 
 // struct representing each directory
 type Directory struct {
 	// directory name
-	name string
+	Name string
 	// parent directory pointer
-	parent *Directory
+	Parent *Directory
 	// hash of subdirectory name to subdirectory pointer
-	subdirectories map[string]*Directory
+	Subdirectories map[string]*Directory
 	// hash of file name to file pointer
-	files map[string]*File
+	Files map[string]*File
 	// cached value of directory size
 	// used to avoid computing size multiple times
 	// -1 represents empty value
-	cachedSize int
+	CachedSize int
 }
 
 // directory constructor
@@ -43,11 +43,11 @@ func Mkdir() *Directory {
 	// create new directory
 	directory := &Directory{}
 	// initialize hash of subdirectories
-	directory.subdirectories = make(map[string]*Directory)
+	directory.Subdirectories = make(map[string]*Directory)
 	// initialize hash of files
-	directory.files = make(map[string]*File)
+	directory.Files = make(map[string]*File)
 	// set cached size to empty value
-	directory.cachedSize = -1
+	directory.CachedSize = -1
 
 	return directory
 }
@@ -55,13 +55,13 @@ func Mkdir() *Directory {
 // add file to directory
 func (directory *Directory) Touch(file *File) error {
 	// check and return error if file already exists
-	_, ok := directory.files[file.name]
+	_, ok := directory.Files[file.Name]
 	if ok {
-		return fmt.Errorf("file with name %s already exists in directory %s", file.name, directory.name)
+		return fmt.Errorf("file with name %s already exists in directory %s", file.Name, directory.Name)
 	}
 
 	// store file pointer in hash
-	directory.files[file.name] = file
+	directory.Files[file.Name] = file
 
 	return nil
 }
@@ -69,15 +69,15 @@ func (directory *Directory) Touch(file *File) error {
 // add subdirectory to directory
 func (directory *Directory) Mv(subdirectory *Directory) error {
 	// check and return error if file already exists
-	_, ok := directory.subdirectories[subdirectory.name]
+	_, ok := directory.Subdirectories[subdirectory.Name]
 	if ok {
-		return fmt.Errorf("subdirectory with name %s already exists in directory %s", subdirectory.name, directory.name)
+		return fmt.Errorf("subdirectory with name %s already exists in directory %s", subdirectory.Name, directory.Name)
 	}
 
 	// store subdirectory pointer in hash
-	directory.subdirectories[subdirectory.name] = subdirectory
+	directory.Subdirectories[subdirectory.Name] = subdirectory
 	// set directory as parent of subdirectory
-	subdirectory.parent = directory
+	subdirectory.Parent = directory
 
 	return nil
 }
@@ -91,17 +91,17 @@ func (directory *Directory) Cd(directoryName string) (*Directory, error) {
 
 	// navigate to parent directory if relative parent path
 	if directoryName == ".." {
-		if directory.parent == nil {
-			return nil, fmt.Errorf("directory %s has no parent", directory.name)
+		if directory.Parent == nil {
+			return nil, fmt.Errorf("directory %s has no parent", directory.Name)
 		}
 
-		return directory.parent, nil
+		return directory.Parent, nil
 	}
 
 	// navigate to subdirectory
-	subdirectory, ok := directory.subdirectories[directoryName]
+	subdirectory, ok := directory.Subdirectories[directoryName]
 	if !ok {
-		return nil, fmt.Errorf("no subdirectory with name %s exists in directory %s", directoryName, directory.name)
+		return nil, fmt.Errorf("no subdirectory with name %s exists in directory %s", directoryName, directory.Name)
 	}
 
 	return subdirectory, nil
@@ -110,24 +110,24 @@ func (directory *Directory) Cd(directoryName string) (*Directory, error) {
 // recursively compute size of directory files and subdirectories
 func (directory *Directory) Du() int {
 	// if directory cached size is non-empty, return cached size
-	if directory.cachedSize >= 0 {
-		return directory.cachedSize
+	if directory.CachedSize >= 0 {
+		return directory.CachedSize
 	}
 
 	size := 0
 
 	// add file sizes
-	for _, file := range directory.files {
-		size += file.size
+	for _, file := range directory.Files {
+		size += file.Size
 	}
 
 	// recursively add subdirectory sizes
-	for _, subdirectory := range directory.subdirectories {
+	for _, subdirectory := range directory.Subdirectories {
 		size += subdirectory.Du()
 	}
 
 	// set directory cached size
-	directory.cachedSize = size
+	directory.CachedSize = size
 
 	return size
 }
@@ -147,7 +147,7 @@ func GetFileScanner(filePath string) (*bufio.Scanner, error) {
 func main() {
 	// create root directory
 	rootDirectory = Mkdir()
-	rootDirectory.name = "/"
+	rootDirectory.Name = "/"
 	// set root directory to current directory
 	pwd := rootDirectory
 	// list of directories navigated
@@ -190,7 +190,7 @@ func main() {
 
 				// create new directory
 				newDirectory := Mkdir()
-				newDirectory.name = directoryName
+				newDirectory.Name = directoryName
 
 				// add new directory as subdirectory of current directory
 				err := pwd.Mv(newDirectory)
@@ -211,8 +211,8 @@ func main() {
 
 				// create new file
 				newFile := &File{
-					name: fileName,
-					size: fileSize,
+					Name: fileName,
+					Size: fileSize,
 				}
 
 				// add new file to current directory
