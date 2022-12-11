@@ -6,9 +6,9 @@
 
 [Advent of Code](https://adventofcode.com) is an Advent calendar of small programming puzzles for a variety of skill sets and skill levels that can be solved in any programming language you like. This repository contains solutions to the 2022 Advent of Code calendar.
 
-Completed **10** out of **25** advent day puzzles.
+Completed **11** out of **25** advent day puzzles.
 
-![Progress Bar](https://progress-bar.dev/40)
+![Progress Bar](https://progress-bar.dev/44)
 
 Day | Puzzle | Solutions
 --- | --- | ---
@@ -22,3 +22,4 @@ Day | Puzzle | Solutions
 8 | [Treetop Tree House](https://adventofcode.com/2022/day/8) | [![](https://img.shields.io/badge/go-00ADD8?style=for-the-badge&logo=go&logoColor=FFFFFF)](Day_8_Treetop_Tree_House/Go/main.go) [![](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=FFDD54)](Day_8_Treetop_Tree_House/Python/main.py)
 9 | [Rope Bridge](https://adventofcode.com/2022/day/9) | [![](https://img.shields.io/badge/go-00ADD8?style=for-the-badge&logo=go&logoColor=FFFFFF)](Day_9_Rope_Bridge/Go/main.go) [![](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=FFDD54)](Day_9_Rope_Bridge/Python/main.py)
 10 | [Cathode-Ray Tube](https://adventofcode.com/2022/day/10) | [![](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=FFDD54)](Day_10_Cathode-Ray_Tube/Python/main.py)
+11 | [Monkey in the Middle](https://adventofcode.com/2022/day/11) | [![](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=FFDD54)](Day_11_Monkey_in_the_Middle/Python/main.py)
