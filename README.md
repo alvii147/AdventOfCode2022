@@ -6,9 +6,9 @@
 
 [Advent of Code](https://adventofcode.com) is an Advent calendar of small programming puzzles for a variety of skill sets and skill levels that can be solved in any programming language you like. This repository contains solutions to the 2022 Advent of Code calendar.
 
-Completed **12** out of **25** advent day puzzles.
+Completed **13** out of **25** advent day puzzles.
 
-![Progress Bar](https://progress-bar.dev/48)
+![Progress Bar](https://progress-bar.dev/52)
 
 Day | Puzzle | Solutions
 --- | --- | ---
@@ -24,3 +24,4 @@ Day | Puzzle | Solutions
 10 | [Cathode-Ray Tube](https://adventofcode.com/2022/day/10) | [![](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=FFDD54)](Day_10_Cathode-Ray_Tube/Python/main.py)
 11 | [Monkey in the Middle](https://adventofcode.com/2022/day/11) | [![](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=FFDD54)](Day_11_Monkey_in_the_Middle/Python/main.py)
 12 | [Hill Climbing Algorithm](https://adventofcode.com/2022/day/12) | [![](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=FFDD54)](Day_12_Hill_Climbing_Algorithm/Python/main.py)
+13 | [Distress Signal](https://adventofcode.com/2022/day/13) | [![](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=FFDD54)](Day_13_Distress_Signal/Python/main.py)
