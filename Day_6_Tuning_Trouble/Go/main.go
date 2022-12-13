@@ -58,7 +58,7 @@ func main() {
 	// read input file into bytes slice
 	fileBytes, err := os.ReadFile(filePath)
 	if err != nil {
-		fmt.Println("failed to get file scanner", err.Error())
+		fmt.Println("failed to read file", filePath, err.Error())
 		return
 	}
 
