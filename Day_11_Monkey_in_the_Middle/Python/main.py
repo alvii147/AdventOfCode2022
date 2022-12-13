@@ -163,6 +163,7 @@ if __name__ == '__main__':
     monkeys_manager.set_worry_manager(worry_manager)
 
     # run inspection rounds
+    # n_rounds = 20
     n_rounds = 10000
     for r in range(n_rounds):
         monkeys_manager.run_inspection_round()
