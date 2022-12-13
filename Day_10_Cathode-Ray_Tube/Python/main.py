@@ -52,12 +52,11 @@ if __name__ == '__main__':
             # increment writing position
             i += 1
             # if reached end of row
-            if i == 40:
+            if i == screen_length:
                 # print row
                 print(''.join(row))
                 # reset writing position and row
                 i = 0
-                row = [' '] * 40
 
         # update register X
         X += V
