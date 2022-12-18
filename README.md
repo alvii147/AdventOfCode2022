@@ -6,9 +6,9 @@
 
 [Advent of Code](https://adventofcode.com) is an Advent calendar of small programming puzzles for a variety of skill sets and skill levels that can be solved in any programming language you like. This repository contains solutions to the 2022 Advent of Code calendar.
 
-Completed **15** out of **25** advent day puzzles.
+Completed **16** out of **25** advent day puzzles.
 
-![Progress Bar](https://progress-bar.dev/60)
+![Progress Bar](https://progress-bar.dev/64)
 
 Day | Puzzle | Solutions
 --- | --- | ---
@@ -27,3 +27,4 @@ Day | Puzzle | Solutions
 13 | [Distress Signal](https://adventofcode.com/2022/day/13) | [![](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=FFDD54)](Day_13_Distress_Signal/Python/main.py)
 14 | [Regolith Reservoir](https://adventofcode.com/2022/day/14) | [![](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=FFDD54)](Day_14_Regolith_Reservoir/Python/main.py)
 15 | [Beacon Exclusion Zone](https://adventofcode.com/2022/day/15) | [![](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=FFDD54)](Day_15_Beacon_Exclusion_Zone/Python/main.py)
+16 | [Proboscidea Volcanium](https://adventofcode.com/2022/day/16) | [![](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=FFDD54)](Day_16_Proboscidea_Volcanium/Python/main.py)
