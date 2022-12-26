@@ -6,9 +6,9 @@
 
 [Advent of Code](https://adventofcode.com) is an Advent calendar of small programming puzzles for a variety of skill sets and skill levels that can be solved in any programming language you like. This repository contains solutions to the 2022 Advent of Code calendar.
 
-Completed **17** out of **25** advent day puzzles.
+Completed **18** out of **25** advent day puzzles.
 
-![Progress Bar](https://progress-bar.dev/68)
+![Progress Bar](https://progress-bar.dev/72)
 
 Day | Puzzle | Solutions
 --- | --- | ---
@@ -29,3 +29,4 @@ Day | Puzzle | Solutions
 15 | [Beacon Exclusion Zone](https://adventofcode.com/2022/day/15) | [![](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=FFDD54)](Day_15_Beacon_Exclusion_Zone/Python/main.py)
 16 | [Proboscidea Volcanium](https://adventofcode.com/2022/day/16) | [![](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=FFDD54)](Day_16_Proboscidea_Volcanium/Python/main.py)
 17 | [Pyroclastic Flow](https://adventofcode.com/2022/day/17) | [![](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=FFDD54)](Day_17_Pyroclastic_Flow/Python/main.py)
+18 | [Boiling Boulders](https://adventofcode.com/2022/day/18) | [![](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=FFDD54)](Day_18_Boiling_Boulders/Python/main.py)
