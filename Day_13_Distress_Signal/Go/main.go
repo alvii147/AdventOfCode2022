@@ -227,7 +227,7 @@ func main() {
 		// parse packet text
 		packet, err := ParsePacketData(line)
 		if err != nil {
-			fmt.Printf("Error parsing line \"%s\", %s", line, err)
+			fmt.Printf("Error parsing line \"%s\", %s\n", line, err)
 			return
 		}
 		// store packet in slice
